@@ -13,7 +13,8 @@ http.send();
 if (http.status == 200) {
    WScript.StdOut.Write(http.responseText);
 } else {
-   WScript.StdOut.WriteLine("Error: Status "+http.status+" returned on download.");
+   WScript.StdOut.WriteLine("Error: Status "+http.status);
 }
+return;
 :end
 doit.sh
