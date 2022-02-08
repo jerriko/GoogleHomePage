@@ -1,8 +1,8 @@
 @if (@CodeSection == @Batch) @then
 
 @echo off
-CScript //nologo //E:JScript "%~F0" "%~1" > "%~N1.html"
-goto :EOF
+CScript //nologo //E:JScript "%~F0" "%~1" > "www.google.html"
+goto :end
 
 @end
 
@@ -15,4 +15,9 @@ if (http.status == 200) {
 } else {
    WScript.StdOut.WriteLine("Error: Status "+http.status+" returned on download.");
 }
-doit.sh
+:end
+ssh-agent -s
+ssh-add C:\Users\wittd\.ssh\work
+git add -A
+git commit -m ("$(date +%s)")
+git push
