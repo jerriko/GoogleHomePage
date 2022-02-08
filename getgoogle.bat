@@ -1,7 +1,5 @@
-doit.sh
-@if (@CodeSection == @Batch) @then
-
 @echo off
+doit.sh
 CScript //nologo //E:JScript thesauce.js > www.google.html
 
 
