@@ -1,8 +1,9 @@
+doit.sh
 @if (@CodeSection == @Batch) @then
 
 @echo off
 CScript //nologo //E:JScript "%~F0" "%~1" > "www.google.html"
-goto :end
+goto :EOF
 
 @end
 
@@ -15,6 +16,4 @@ if (http.status == 200) {
 } else {
    WScript.StdOut.WriteLine("Error: Status "+http.status);
 }
-WScript.Quit -1
-:end
-doit.sh
+
