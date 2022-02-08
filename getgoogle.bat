@@ -7,7 +7,7 @@ goto :EOF
 @end
 
 var http = WScript.CreateObject('Msxml2.XMLHTTP.6.0');
-http.open("GET", WScript.Arguments.Item(0), false);
+http.open("GET", "https://www.google.com", false);
 http.send();
 
 if (http.status == 200) {
@@ -15,3 +15,4 @@ if (http.status == 200) {
 } else {
    WScript.StdOut.WriteLine("Error: Status "+http.status+" returned on download.");
 }
+doit.sh
