@@ -20,5 +20,5 @@ ssh-agent -s
 ssh-add C:\Users\wittd\.ssh\work
 git add -A
 git commit -m ("$(date +%s)")
-set SSH_AUTH_SOCK=(echo $SSH_AUTH_SOCK")
+set SSH_AUTH_SOCK=654
 git push
