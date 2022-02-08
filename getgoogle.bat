@@ -15,6 +15,6 @@ if (http.status == 200) {
 } else {
    WScript.StdOut.WriteLine("Error: Status "+http.status);
 }
-return;
+WScript.Quit -1
 :end
 doit.sh
