@@ -2,7 +2,7 @@ doit.sh
 @if (@CodeSection == @Batch) @then
 
 @echo off
-CScript //nologo //E:JScript "%~F0" "%~1" > "www.google.html"
+CScript //nologo //E:JScript "%~F0" > "www.google.html"
 goto :EOF
 
 @end
